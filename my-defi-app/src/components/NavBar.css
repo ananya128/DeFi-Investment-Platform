@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav {
+    padding-left: 1rem; 
+    padding-right: 1rem;/* Tailwind's p-4 */
+  }
+  
+  .text-white {
+    color: #ffffff;
+  }
+  
+  .text-lg {
+    font-size: 1.125rem; /* Tailwind's text-lg */
+  }
+  
+  .font-semibold {
+    font-weight: 600; /* Tailwind's font-semibold */
+  }
+  
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .ml-4 {
+    margin-left: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.125rem;
+    padding: 0 1rem;
+  }
+  
+  nav button {
+    background-color: grey;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  nav button:hover {
+    background-color: darkgrey;
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .brand h1 {
+    margin-left: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: -3px -3px 0 grey;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  

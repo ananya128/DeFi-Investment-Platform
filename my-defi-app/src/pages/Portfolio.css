@@ -1,0 +1,47 @@
+.portfolio-page {
+    padding: 20px;
+  }
+  
+  .investment-list {
+    margin-bottom: 20px;
+  }
+  
+  .investment-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .investment-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .investment-form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .investment-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .investment-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .investment-charts {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  

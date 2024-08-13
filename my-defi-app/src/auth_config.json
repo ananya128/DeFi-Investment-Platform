@@ -1,0 +1,9 @@
+{
+  "domain": "dev-b3clsyr1vtq0iuvi.us.auth0.com",
+  "clientId": "YR6lONX7ULdlSJ2Su636h9NZQRzJmC8R",
+  "audience": "https://dev-b3clsyr1vtq0iuvi.us.auth0.com/api/v2/",
+  "scope": "openid profile email read:users update:users update:users_app_metadata update:current_user_metadata"
+}
+
+
+

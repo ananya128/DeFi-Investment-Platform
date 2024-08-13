@@ -1,0 +1,83 @@
+$size: 2rem;
+$rsize: $size * .75;
+$angle: 68deg;
+$r: 50deg;
+$color: #936AE4;
+$bg: darken($color, 5);
+
+.wrapper {
+  margin-bottom: 0;
+  transform-style: preserve-3d;
+  width: $rsize; 
+  height: $rsize;
+  transform-origin: $rsize / 2 $rsize / 2;
+  transform: rotateX($r) rotateZ(45deg);
+  animation: rotate 4s linear infinite;
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+.pyramid {
+  position: absolute;
+  perspective: 500px;
+  transform-style: preserve-3d;
+  &.inverse {
+    transform: translateZ(-$size / 7) rotateY(180deg);
+  }
+}
+
+.square {
+  width: $rsize;
+  height: $rsize;
+  background: lighten($color, 20);
+  transform-style: preserve-3d;
+}
+
+.triangle {
+  position: absolute;
+  width: $size;
+  height: $size;
+  &:nth-child(1) {
+    width: $rsize;
+    top: -33%;
+    background: lighten($color, 30);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform-origin: 50% 100%;
+    transform: rotateX(-$angle);
+  }
+  &:nth-child(2) {
+    width: $rsize;
+    background: lighten($color, 30);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    transform-origin: 50% 0%;
+    transform: rotateX($angle);
+  }
+  &:nth-child(3) {
+    height: $rsize;
+    left: -33%;
+    background: lighten($color, 40);
+    transform-origin: 100% 50%;
+    clip-path: polygon(100% 100%, 0 50%, 100% 0);
+    transform: rotateY($angle);
+  }
+  &:nth-child(4) {
+    height: $rsize;
+    background: lighten($color, 40);
+    transform-origin: 0% 50%;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+    transform: rotateY(-$angle);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateX($r) rotateZ(0deg) translateZ(-.5rem);
+  }
+  50% {
+    transform: rotateX($r) rotateZ(180deg) translateZ(.5rem);
+  }
+  to {
+    transform: rotateX($r) rotateZ(360deg) translateZ(-.5rem);
+  }
+}
